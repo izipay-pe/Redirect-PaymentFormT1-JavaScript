@@ -3,10 +3,10 @@
 Seguir los siguientes pasos para poder ejecutar este ejemplo:
 
 
-1. Descargar el manual desde [Manual Izipay - implementación en REDIRECCIÓN](https://secure.micuentaweb.pe/doc/es-PE/form-payment/quick-start-guide/sitemap.html).
+1. ##Descargar el manual desde [Manual Izipay - implementación en REDIRECCIÓN](https://secure.micuentaweb.pe/doc/es-PE/form-payment/quick-start-guide/sitemap.html).
 
 
-2. Ingreso al BO Vendedor
+2. ##Ingreso al BO Vendedor
 
 Ingresar al siguiente link: [Back Office Vendedor](https://secure.micuentaweb.pe/vads-merchant/), ingresar con tus credenciales, seguir la siguiente ruta:
 
@@ -17,7 +17,7 @@ Ingresar al siguiente link: [Back Office Vendedor](https://secure.micuentaweb.pe
 *Copiar la clave de TEST O PRODUCCION segun sea el caso y reemplazarlo en el valor del `id = key` segun el paso `3. Realizar los siguientes cambios`.
 
 
-3. Realizar los siguientes cambios:
+3. ##Realizar los siguientes cambios:
 
 Cambiar las credenciales en:
 
