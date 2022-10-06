@@ -25,6 +25,8 @@ Cambiar las credenciales en:
 
 `scr -> index.html`
 
+* En el input con el `id = campo3`, reemplazar el valor de `value = TEST o PRODUCCION` segun la clave que estemos utilizando, extraido desde el BO vendedor.
+
 * En el input con el `id = campo7`, reemplazar el valor de `value = xxxxxxxx` por el "Identificador de la tienda" extraido desde el BO vendedor.
 
 * En el input con el `id = key`, reemplazar el valor de `value = xxxxxxxx` por la "clave TEST O PRODUCCION" de la tienda extraida desde el BO vendedor.
