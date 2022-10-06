@@ -3,7 +3,7 @@
   Seguir los siguientes pasos para poder ejecutar este ejemplo:
 
 
-## 1. Descargar el manual
+## 1. Descargar manual
 
 Descargar el manual desde [Manual Izipay - implementación en REDIRECCIÓN](https://secure.micuentaweb.pe/doc/es-PE/form-payment/quick-start-guide/sitemap.html).
 
