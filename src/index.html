@@ -7,21 +7,35 @@
   <title>Izipay</title>
 
   <link rel="stylesheet" href="/css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
 
-
-
 <div class="signupFrm">
-  <form class="form" name="formulario" method="POST" action="https://secure.micuentaweb.pe/vads-payment/" target="nameFrame">    
+  
+  <div class="Iam">
+    <div style="margin-left: 0px; color: #FF4240; font: normal 30px Montserrat, sans-serif; color: #999;">
+      <h2>Ejemplo de un formulario en:</h2>
+    </div>
+    <b>
+      <div class="innerIam">
+        Redirección con JavaScript <img src="../Image/imagenes-readme/js.png"><br /> 
+        Redirección con JavaScript <img src="../Image/imagenes-readme/js.png"><br /> 
+        Redirección con JavaScript <img src="../Image/imagenes-readme/js.png"><br />        
+        <br />
+      </div>
+    </b>    
+  </div>
+
+  <form class="form" name="formulario" method="POST" action="https://secure.micuentaweb.pe/vads-payment/">    
 
     <div style="margin-bottom: 20px; text-align: center;">
           <img src="../Image/logo_izipay.png">
     </div>  
       
     <div class="inputContainer">
-      <input id="campo1" type="text" class="input" placeholder="" name="vads_action_mode" value="IFRAME" readonly />             
+      <input id="campo1" type="text" class="input" placeholder="" name="vads_action_mode" value="INTERACTIVE" readonly />             
       <label for="" class="label">vads_action_mode</label>
     </div>
 
@@ -51,7 +65,7 @@
     </div>
 
     <div class="inputContainer">
-      <input id="campo7" type="text" class="input" placeholder="" name="vads_site_id" value="xxxxxxxx" readonly />             
+      <input id="campo7" type="text" class="input" placeholder="" name="vads_site_id" value="~~CHANGE_ME_id~~" readonly />             
       <label for="" class="label">vads_site_id / (CODIGO DE LA TIENDA)</label>
     </div>
 
@@ -75,57 +89,17 @@
       <label for="" class="label">signature / (FIRMA EN BASE 64)</label>
     </div>
 
-    <input id="key" type="hidden" value="xxxxxxxx"/>  
+    <input id="key" type="hidden" value="~~CHANGE_ME_key~~" />  
    
     <input class="submitBtn" onClick="javascript:procesar();" type="submit" name="pagar" value="PAGAR"/>
     
   </form>
 
-  <div>    
-      <div style="text-align: center;margin-left: 100px; font: normal 30px Montserrat, sans-serif; color: #999;">
-        <h2>Ejemplo de un formulario en:</h2><h2 style="color: #FF4240">IFRAME en Redirección con JS</h2>             
-      </div>
-
-      <iframe name="nameFrame" src="" scrolling="si" width="950" height="600" style="margin-left: 100px"></iframe>  
-  </div>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac-sha256.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-base64.min.js"></script>
-  <script>    
-      
-      //Formato UTC, la fecha UTC es la fecha actual + 5 horas 
-      var utcDate = new Date().toISOString().replace(/T/, '').replace(/\..+/, '').replace(/-/, '').replace(/-/, '').replace(/:/, '').replace(/:/, '')
-      document.formulario.campo8.value = utcDate.replace(/ /g, "");    
 
-        function procesar() {                         
-
-            campo1=document.getElementById('campo1').value;
-            campo2=document.getElementById('campo2').value;
-            campo3=document.getElementById('campo3').value;
-            campo4=document.getElementById('campo4').value;
-            campo5=document.getElementById('campo5').value;
-            campo6=document.getElementById('campo6').value;
-            campo7=document.getElementById('campo7').value;
-            campo8=document.getElementById('campo8').value;
-            campo9=document.getElementById('campo9').value;
-            campo10=document.getElementById('campo10').value;
-            llave=document.getElementById('key').value;
-            
-            
-            final = campo1+"+"+campo2+"+"+campo3+"+"+campo4+"+"+campo5+"+"+campo6+"+"+campo7+"+"+campo8+"+"+campo9+"+"+campo10+"+"+llave;
-            key = llave;
-
-            hash = CryptoJS.HmacSHA256(final, key); 
-
-            hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
-
-            document.getElementById('campo11').value = hashInBase64;
-            console.log("Cadena String64= "+hashInBase64)
-
-            document.forms.ejemplo.submit();
-        }
-  </script>
+  <script src="../js/formulario.js"></script>  
 </div>
   
 </body>
