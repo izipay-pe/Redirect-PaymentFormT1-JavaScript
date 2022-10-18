@@ -83,7 +83,7 @@ El formulario de pago está listo, puede intentar realizar una transacción util
 
 * Puede consultar las tarjetas de prueba desde este enlace: [Tarjetas de Prueba](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/api/kb/test_cards.html).
 
-Tarjeta de prueba Visa:
+  Tarjeta de prueba Visa:
     - *Número de tarjeta*: 4970100000000055
     - *Fecha de vencimiento*: 12/30   
     - *Código de seguridad*: 123
