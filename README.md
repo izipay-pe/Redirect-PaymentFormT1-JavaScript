@@ -13,10 +13,10 @@ Ejemplo del formulario en REDIRECCIÓN de Izipay con JavaScript, para poder ejec
 
 
 ## 1.- Crear el proyecto
-Descargar el proyecto .zip haciendo click [Aquí](https://github.com/izipay-pe/Redirect-PaymentFormT1-JavaScript/archive/refs/heads/main.zip) o clonarlo desde Git.
-```sh
-git clone https://github.com/izipay-pe/Redirect-PaymentFormT1-JavaScript.git
-``` 
+* Descargar el proyecto .zip haciendo click [Aquí](https://github.com/izipay-pe/Redirect-PaymentFormT1-JavaScript/archive/refs/heads/main.zip) o clonarlo desde Git.
+  ```sh
+  git clone https://github.com/izipay-pe/Redirect-PaymentFormT1-JavaScript.git
+  ``` 
 
 * Para ejecutar este proyecto de manera local utilizaremos una extensión de Visual Studio Cod que simulara un servidor web, para instalar esta extensión abrimos Visual Studio Cod y en la parte izquierda nos dirigimos a `Extensiones` y digitamos en el buscador `Live Server` he instalamos la extensión.  
 
@@ -83,10 +83,10 @@ El formulario de pago está listo, puede intentar realizar una transacción util
 
 * Puede consultar las tarjetas de prueba desde este enlace: [Tarjetas de Prueba](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/api/kb/test_cards.html).   
 
-  - Tarjeta de prueba Visa:
-  *Número de tarjeta*: 4970100000000055
-  *Fecha de vencimiento*: 12/30   
-  *Código de seguridad*: 123
+  * Tarjeta de prueba Visa:
+    - *Número de tarjeta*: 4970100000000055
+    - *Fecha de vencimiento*: 12/30   
+    - *Código de seguridad*: 123
  
 ## 4.- Implementar IPN
 
