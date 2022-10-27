@@ -2,7 +2,7 @@
 
 Ejemplo del formulario en REDIRECCIÓN de Izipay con JavaScript, para poder ejecutar el siguiente ejemplo seguir los pasos del presente manual.
 
-![pagar](Image/imagenes-readme/demofinal.png)
+![pagar](Image/imagenes-readme/formulario-redireccion.png)
 
 <a name="Requisitos_Previos"></a>
 ## Requisitos Previos
